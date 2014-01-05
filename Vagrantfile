@@ -110,7 +110,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   chef.json = { :mysql_password => "foo" }
   # end
   config.vm.provision "ansible" do |ansible|
-    ansible.inventory_path = "provisioning/hosts"
+    ansible.sudo = "true"
+    ansible.sudo_user = "vagrant"
     ansible.playbook = "provisioning/site.yml"
   end
 
