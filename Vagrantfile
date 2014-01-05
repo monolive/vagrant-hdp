@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "vagrant-centos-6.5-x86_64-v3"
+  config.vm.box = "vagrant-centos-6.5-x86_64-v4"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -110,8 +110,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   chef.json = { :mysql_password => "foo" }
   # end
   config.vm.provision "ansible" do |ansible|
-    ansible.sudo = "true"
-    ansible.sudo_user = "vagrant"
+    #ansible.sudo = true
+    #ansible.sudo_user = "vagrant"
     ansible.playbook = "provisioning/site.yml"
   end
 
