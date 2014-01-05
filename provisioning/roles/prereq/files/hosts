@@ -1,0 +1,7 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+192.168.33.10	node1.ambari.hdp node1
+192.168.33.20	node2.ambari.hdp node2
+192.168.33.30	node3.ambari.hdp node3
+
+
+192.168.33.80	webserver.ambari.hdp webserver

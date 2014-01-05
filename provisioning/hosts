@@ -1,0 +1,4 @@
+[ambari-cluster]
+node1.ambari.hdp
+node2.ambari.hdp
+node3.ambari.hdp
