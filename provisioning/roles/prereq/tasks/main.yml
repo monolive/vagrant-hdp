@@ -1,3 +1,6 @@
 ---
   - name : copy hosts file
     copy : src=hosts dest=/etc/hosts
+
+  - name : copy repo file
+    copy : src=CentOS-Base.repo dest=/etc/yum.repos.d/CentOS-Base.repo
