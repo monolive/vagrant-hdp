@@ -34,6 +34,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     node3.vm.hostname = "node3.ambari.hdp"
     node3.vm.network :private_network, ip: "192.168.33.30"
   end
+  config.vm.define :node4 do |node4|
+    node4.vm.hostname = "node4.ambari.hdp"
+    node4.vm.network :private_network, ip: "192.168.33.40"
+  end
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network :private_network, ip: "192.168.33.10"
